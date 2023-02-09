@@ -2,6 +2,7 @@ from flask import Flask, request, make_response, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
+PORT = 8000
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///todoApp.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -95,4 +96,4 @@ def changeTaskStatus(sno):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8000)
+    app.run(debug=True, port=PORT)
