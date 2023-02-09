@@ -1,0 +1,4 @@
+virtualenv==20.19.0
+flask==2.2.2
+flask_sqlalchemy==3.0.3
+
